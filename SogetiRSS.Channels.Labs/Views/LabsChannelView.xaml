@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="SogetiRSS.Views.LabsChannelView"
+             x:ClassModifier="internal"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SogetiRSS.Views"
+             mc:Ignorable="d"
+             d:DesignHeight="100"
+             d:DesignWidth="200"
+             FontFamily="Trebuchet MS">
+    <Grid HorizontalAlignment="Left">
+        <ToggleButton BorderBrush="#FFFFFFFF"
+                      BorderThickness="4"
+                      Cursor="Hand"
+                      Foreground="#FFFFFFFF"
+                      Height="100"
+                      HorizontalContentAlignment="Stretch"
+                      VerticalContentAlignment="Stretch"
+                      Width="200">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <StackPanel Background="#FFEF4527"
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Orientation="Vertical">
+                    <TextBlock FontSize="16"
+                               FontWeight="Bold"
+                               Padding="5,2,0,0"
+                               Text="Sogeti Labs" />
+                    <TextBlock FontSize="10"
+                               Padding="5,2,0,0"
+                               Text="Vision   Inspiration   Navigation   Trends" />
+                </StackPanel>
+                <StackPanel Background="#FF53180E"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Orientation="Horizontal">
+                </StackPanel>
+            </Grid>
+        </ToggleButton>
+    </Grid>
+</UserControl>

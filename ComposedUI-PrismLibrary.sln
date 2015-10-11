@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiRSS", "SogetiRSS\SogetiRSS.csproj", "{103E42EB-4808-4065-815B-BA6006D4B348}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SogetiRSS.Shared", "SogetiRSS.Shared\SogetiRSS.Shared.shproj", "{6DD4198A-3F98-4AAC-86F5-5D816B9885FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiRSS.Channels.ITBlog", "SogetiRSS.Channels.ITBlog\SogetiRSS.Channels.ITBlog.csproj", "{1BC1AE29-D704-411A-A442-9B25C0DB92C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiRSS.Channels.Labs", "SogetiRSS.Channels.Labs\SogetiRSS.Channels.Labs.csproj", "{F1B66D97-6B8F-4E2C-BD72-45245721BE74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiRSS.Channels.QANews", "SogetiRSS.Channels.QANews\SogetiRSS.Channels.QANews.csproj", "{75EFF8BC-B289-4A84-B37E-B8F57AD806C1}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SogetiRSS.Shared\SogetiRSS.Shared.projitems*{f1b66d97-6b8f-4e2c-bd72-45245721be74}*SharedItemsImports = 4
+		SogetiRSS.Shared\SogetiRSS.Shared.projitems*{103e42eb-4808-4065-815b-ba6006d4b348}*SharedItemsImports = 4
+		SogetiRSS.Shared\SogetiRSS.Shared.projitems*{6dd4198a-3f98-4aac-86f5-5d816b9885fa}*SharedItemsImports = 13
+		SogetiRSS.Shared\SogetiRSS.Shared.projitems*{1bc1ae29-d704-411a-a442-9b25c0db92c9}*SharedItemsImports = 4
+		SogetiRSS.Shared\SogetiRSS.Shared.projitems*{75eff8bc-b289-4a84-b37e-b8f57ad806c1}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{103E42EB-4808-4065-815B-BA6006D4B348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{103E42EB-4808-4065-815B-BA6006D4B348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{103E42EB-4808-4065-815B-BA6006D4B348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{103E42EB-4808-4065-815B-BA6006D4B348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC1AE29-D704-411A-A442-9B25C0DB92C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC1AE29-D704-411A-A442-9B25C0DB92C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC1AE29-D704-411A-A442-9B25C0DB92C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC1AE29-D704-411A-A442-9B25C0DB92C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1B66D97-6B8F-4E2C-BD72-45245721BE74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B66D97-6B8F-4E2C-BD72-45245721BE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B66D97-6B8F-4E2C-BD72-45245721BE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B66D97-6B8F-4E2C-BD72-45245721BE74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75EFF8BC-B289-4A84-B37E-B8F57AD806C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75EFF8BC-B289-4A84-B37E-B8F57AD806C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75EFF8BC-B289-4A84-B37E-B8F57AD806C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75EFF8BC-B289-4A84-B37E-B8F57AD806C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
