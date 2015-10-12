@@ -9,6 +9,8 @@
     <Import_RootNamespace>SogetiRSS</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ChannelNames.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GlobalCommands.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RegionNames.cs" />
   </ItemGroup>
 </Project>

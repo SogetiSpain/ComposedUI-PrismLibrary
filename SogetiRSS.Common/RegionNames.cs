@@ -9,7 +9,7 @@ namespace SogetiRSS
     /// <summary>
     /// Represents the region names.
     /// </summary>
-    internal static class RegionNames
+    public static class RegionNames
     {
         #region Fields
 

@@ -4,7 +4,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SogetiRSS"
+        xmlns:common="clr-namespace:SogetiRSS;assembly=SogetiRSS.Common"
         xmlns:prism="http://prismlibrary.com/"
         mc:Ignorable="d"
         Background="#FFFFFFFF"
@@ -14,8 +14,8 @@
         Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition Width="220" />
+            <ColumnDefinition Width="380" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
@@ -24,17 +24,17 @@
         </Grid.RowDefinitions>
 
         <ItemsControl x:Name="RSSChannelsRegion"
-                      prism:RegionManager.RegionName="{x:Static local:RegionNames.RSSChannels}"
+                      prism:RegionManager.RegionName="{x:Static common:RegionNames.RSSChannels}"
                       Grid.Column="0"
                       Grid.Row="0" />
 
         <ContentControl x:Name="RSSFeeds"
-                        prism:RegionManager.RegionName="{x:Static local:RegionNames.RSSFeeds}"
+                        prism:RegionManager.RegionName="{x:Static common:RegionNames.RSSFeeds}"
                         Grid.Column="1"
                         Grid.Row="0" />
 
         <ContentControl x:Name="RSSFeedReader"
-                        prism:RegionManager.RegionName="{x:Static local:RegionNames.RSSFeedReader}"
+                        prism:RegionManager.RegionName="{x:Static common:RegionNames.RSSFeedReader}"
                         Grid.Column="2"
                         Grid.Row="0" />
     </Grid>

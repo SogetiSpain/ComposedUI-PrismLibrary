@@ -8,8 +8,10 @@ namespace SogetiRSS
 {
     using System.Windows;
     using Microsoft.Practices.ServiceLocation;
+    using Microsoft.Practices.Unity;
     using Prism.Modularity;
     using Prism.Unity;
+    using Services;
     using Views;
 
     /// <summary>
@@ -18,6 +20,16 @@ namespace SogetiRSS
     internal sealed class Bootstrapper : UnityBootstrapper
     {
         #region Methods
+
+        /// <summary>
+        /// Configures the container.
+        /// </summary>
+        protected override void ConfigureContainer()
+        {
+            base.ConfigureContainer();
+
+            this.Container.RegisterType<IRSSService, RSSService>();
+        }
 
         /// <summary>
         /// Creates the module catalog.

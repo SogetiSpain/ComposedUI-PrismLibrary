@@ -5,9 +5,62 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SogetiRSS.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-            
+             mc:Ignorable="d"
+             d:DesignHeight="100"
+             d:DesignWidth="350"
+             FontFamily="Trebuchet MS">
+    <Grid HorizontalAlignment="Center">
+        <ListBox BorderBrush="Transparent"
+                 BorderThickness="0"
+                 Foreground="#FFFFFFFF"
+                 ItemsSource="{Binding FeedItems, Mode=OneWay, NotifyOnSourceUpdated=True}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Cursor="Hand"
+                                HorizontalAlignment="Center"
+                                Margin="0,5,0,5"
+                                Orientation="Vertical"
+                                Width="350">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <StackPanel Background="#FF939393"
+                                        Grid.Column="0"
+                                        Grid.Row="0"
+                                        Orientation="Vertical">
+                                <TextBlock FontSize="16"
+                                           Foreground="#FFFFFFFF"
+                                           Padding="5,0,0,2"
+                                           Text="{Binding PublishDate, StringFormat={}{0:MMM}, Mode=OneWay, NotifyOnSourceUpdated=True}" />
+                                <TextBlock FontSize="16"
+                                           Foreground="#FFFFFFFF"
+                                           Padding="5,2,0,0"
+                                           Text="{Binding PublishDate, StringFormat={}{0:dd/yyyy}, Mode=OneWay, NotifyOnSourceUpdated=True}" />
+                            </StackPanel>
+                            <StackPanel Background="#FF0098CC"
+                                        Grid.Column="1"
+                                        Grid.Row="0"
+                                        Orientation="Vertical">
+                                <TextBlock FontSize="16"
+                                           FontWeight="Bold"
+                                           Padding="5,2,0,0"
+                                           Text="{Binding Title, Mode=OneWay, NotifyOnSourceUpdated=True}"
+                                           TextWrapping="Wrap" />
+                                <TextBlock FontSize="10"
+                                           Padding="5,2,5,2"
+                                           Text="{Binding Summary, Mode=OneWay, NotifyOnSourceUpdated=True}"
+                                           TextWrapping="Wrap" />
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </UserControl>

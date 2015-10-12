@@ -6,12 +6,10 @@
 // ----------------------------------------------------------------------------
 namespace SogetiRSS.ViewModels
 {
-    using Prism.Mvvm;
-
     /// <summary>
     /// Represents the view model for the LabsFeeds view.
     /// </summary>
-    internal class LabsFeedsViewModel : BindableBase
+    internal class LabsFeedsViewModel : BaseFeedViewModel
     {
     }
 }

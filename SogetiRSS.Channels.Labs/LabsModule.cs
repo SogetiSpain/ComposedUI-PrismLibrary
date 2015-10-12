@@ -58,8 +58,8 @@ namespace SogetiRSS
         {
             this.regionManager.RegisterViewWithRegion(RegionNames.RSSChannels, typeof(LabsChannelView));
 
-            this.container.RegisterType<object, LabsFeedReaderView>("LabsFeedReaderView");
-            this.container.RegisterType<object, LabsFeedsView>("LabsFeedsView");
+            this.container.RegisterType<object, LabsFeedReaderView>(typeof(LabsFeedReaderView).Name);
+            this.container.RegisterType<object, LabsFeedsView>(typeof(LabsFeedsView).Name);
         }
 
         #endregion Methods

@@ -162,8 +162,11 @@
       <Project>{75eff8bc-b289-4a84-b37e-b8f57ad806c1}</Project>
       <Name>SogetiRSS.Channels.QANews</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SogetiRSS.Common\SogetiRSS.Common.csproj">
+      <Project>{78029918-5ee3-4f60-a8e7-f1988579a54f}</Project>
+      <Name>SogetiRSS.Common</Name>
+    </ProjectReference>
   </ItemGroup>
-  <Import Project="..\SogetiRSS.Shared\SogetiRSS.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

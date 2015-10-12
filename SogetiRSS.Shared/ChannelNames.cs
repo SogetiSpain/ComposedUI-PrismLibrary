@@ -1,5 +1,5 @@
 ﻿// ----------------------------------------------------------------------------
-// <copyright file="RegionNames.cs" company="SOGETI Spain">
+// <copyright file="ChannelNames.cs" company="SOGETI Spain">
 //     Copyright © 2015 SOGETI Spain. All rights reserved.
 //     Build user interfaces with Prism by Osc@rNET.
 // </copyright>
@@ -7,26 +7,26 @@
 namespace SogetiRSS
 {
     /// <summary>
-    /// Represents the region names.
+    /// Represents the channel names.
     /// </summary>
-    internal static class RegionNames
+    internal static class ChannelNames
     {
         #region Fields
 
         /// <summary>
-        /// Defines the RSS channels region name.
+        /// Defines the ITBlog channel name.
         /// </summary>
-        public const string RSSChannels = "RSSChannels";
+        public const string ITBlog = "ITBlog";
 
         /// <summary>
-        /// Defines the RSS feed reader region name.
+        /// Defines the Labs channel name.
         /// </summary>
-        public const string RSSFeedReader = "RSSFeedReader";
+        public const string Labs = "Labs";
 
         /// <summary>
-        /// Defines the RSS feeds region name.
+        /// Defines the QANews channel name.
         /// </summary>
-        public const string RSSFeeds = "RSSFeeds";
+        public const string QANews = "QANews";
 
         #endregion Fields
     }

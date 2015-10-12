@@ -8,14 +8,17 @@
              mc:Ignorable="d"
              d:DesignHeight="100"
              d:DesignWidth="200"
-             FontFamily="Trebuchet MS">
-    <Grid HorizontalAlignment="Left">
+             FontFamily="Trebuchet MS"
+             Margin="0,5,0,5">
+    <Grid HorizontalAlignment="Center">
         <ToggleButton BorderBrush="#FFFFFFFF"
                       BorderThickness="4"
                       Cursor="Hand"
                       Foreground="#FFFFFFFF"
                       Height="100"
                       HorizontalContentAlignment="Stretch"
+                      IsChecked="{Binding IsChecked, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
+                      IsEnabled="{Binding IsEnabled, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
                       VerticalContentAlignment="Stretch"
                       Width="200">
             <Grid>
@@ -26,22 +29,29 @@
                     <RowDefinition Height="2*" />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <StackPanel Background="#FFEF4527"
+                <StackPanel Background="#FF3FBD00"
                             Grid.Column="0"
                             Grid.Row="0"
                             Orientation="Vertical">
                     <TextBlock FontSize="16"
                                FontWeight="Bold"
                                Padding="5,2,0,0"
-                               Text="Sogeti Labs" />
+                               Text="{Binding Title, Mode=OneWay, NotifyOnSourceUpdated=True}"
+                               TextWrapping="Wrap" />
                     <TextBlock FontSize="10"
                                Padding="5,2,0,0"
-                               Text="Vision   Inspiration   Navigation   Trends" />
+                               Text="{Binding Description, Mode=OneWay, NotifyOnSourceUpdated=True}"
+                               TextWrapping="Wrap" />
                 </StackPanel>
                 <StackPanel Background="#FF53180E"
                             Grid.Column="0"
                             Grid.Row="1"
                             Orientation="Horizontal">
+                    <TextBlock FontSize="10"
+                               Foreground="#FFBAA39F"
+                               Padding="5,0,0,2"
+                               Text="{Binding LastUpdated, Mode=OneWay, NotifyOnSourceUpdated=True}"
+                               VerticalAlignment="Bottom" />
                 </StackPanel>
             </Grid>
         </ToggleButton>
