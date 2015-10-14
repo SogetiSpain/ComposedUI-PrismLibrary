@@ -6,12 +6,10 @@
 // ----------------------------------------------------------------------------
 namespace SogetiRSS.ViewModels
 {
-    using Prism.Mvvm;
-
     /// <summary>
     /// Represents the view model for the QANewsFeedReader view.
     /// </summary>
-    internal class QANewsFeedReaderViewModel : BindableBase
+    internal class QANewsFeedReaderViewModel : BaseFeedReaderViewModel
     {
     }
 }

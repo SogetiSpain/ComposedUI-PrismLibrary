@@ -5,9 +5,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SogetiRSS.Views"
+             xmlns:helpers="clr-namespace:SogetiRSS.Helpers;assembly=SogetiRSS.Common"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-            
+        <WebBrowser helpers:WebBrowserHelper.NavigationSource="{Binding NavigationSource, Mode=OneWay}" />
     </Grid>
 </UserControl>

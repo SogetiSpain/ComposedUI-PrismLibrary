@@ -9,9 +9,9 @@
         mc:Ignorable="d"
         Background="#FFFFFFFF"
         Foreground="#FF000000"
-        Height="600"
+        Height="700"
         Title="Sogeti RSS (based on Sogeti Whisper)"
-        Width="800">
+        Width="1000">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="220" />

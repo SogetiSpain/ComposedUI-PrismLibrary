@@ -6,12 +6,10 @@
 // ----------------------------------------------------------------------------
 namespace SogetiRSS.ViewModels
 {
-    using Prism.Mvvm;
-
     /// <summary>
     /// Represents the view model for the ITBlogFeedReader view.
     /// </summary>
-    internal class ITBlogFeedReaderViewModel : BindableBase
+    internal class ITBlogFeedReaderViewModel : BaseFeedReaderViewModel
     {
     }
 }

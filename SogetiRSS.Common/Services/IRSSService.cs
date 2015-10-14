@@ -17,6 +17,15 @@ namespace SogetiRSS.Services
         #region Methods
 
         /// <summary>
+        /// Loads the HTML.
+        /// </summary>
+        /// <param name="inputUri">The input URI.</param>
+        /// <returns>
+        /// The loaded HTML from the specified input URI.
+        /// </returns>
+        Task<string> LoadHtml(string inputUri);
+
+        /// <summary>
         /// Loads the syndication feed.
         /// </summary>
         /// <param name="inputUri">The input URI.</param>

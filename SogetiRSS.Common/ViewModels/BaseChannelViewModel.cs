@@ -232,7 +232,7 @@ namespace SogetiRSS.ViewModels
             this.Description = this.Feed.Description.Text;
 
             var feedLastUpdated = this.Feed.LastUpdatedTime.ToLocalTime().DateTime;
-            this.LastUpdated = $"Last updated {feedLastUpdated:MMMM d, yyyy}";
+            this.LastUpdated = string.Format("Last updated {0:MMMM d, yyyy}", feedLastUpdated);
         }
 
         #endregion Methods

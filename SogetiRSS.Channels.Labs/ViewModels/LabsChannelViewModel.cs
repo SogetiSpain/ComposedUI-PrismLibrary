@@ -50,10 +50,10 @@ namespace SogetiRSS.ViewModels
                 return;
             }
 
-            var regionManager = ServiceLocator.Current.GetInstance<IRegionManager>();
             var navigationParameters = new NavigationParameters();
-
             navigationParameters.Add("Feed", this.Feed);
+
+            var regionManager = ServiceLocator.Current.GetInstance<IRegionManager>();
             regionManager.RequestNavigate(
                 RegionNames.RSSFeeds,
                 new Uri(typeof(LabsFeedsView).Name, UriKind.Relative),

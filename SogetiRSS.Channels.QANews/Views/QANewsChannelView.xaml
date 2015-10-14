@@ -36,11 +36,11 @@
                     <TextBlock FontSize="16"
                                FontWeight="Bold"
                                Padding="5,2,0,0"
-                               Text="{Binding Title, Mode=OneWay, NotifyOnSourceUpdated=True}"
+                               Text="{Binding Title, Mode=OneWay}"
                                TextWrapping="Wrap" />
                     <TextBlock FontSize="10"
                                Padding="5,2,0,0"
-                               Text="{Binding Description, Mode=OneWay, NotifyOnSourceUpdated=True}"
+                               Text="{Binding Description, Mode=OneWay}"
                                TextWrapping="Wrap" />
                 </StackPanel>
                 <StackPanel Background="#FF53180E"
@@ -50,7 +50,7 @@
                     <TextBlock FontSize="10"
                                Foreground="#FFBAA39F"
                                Padding="5,0,0,2"
-                               Text="{Binding LastUpdated, Mode=OneWay, NotifyOnSourceUpdated=True}"
+                               Text="{Binding LastUpdated, Mode=OneWay}"
                                VerticalAlignment="Bottom" />
                 </StackPanel>
             </Grid>

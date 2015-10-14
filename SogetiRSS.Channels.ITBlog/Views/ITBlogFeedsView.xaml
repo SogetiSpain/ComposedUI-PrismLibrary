@@ -13,7 +13,9 @@
         <ListBox BorderBrush="Transparent"
                  BorderThickness="0"
                  Foreground="#FFFFFFFF"
-                 ItemsSource="{Binding FeedItems, Mode=OneWay, NotifyOnSourceUpdated=True}">
+                 ItemsSource="{Binding FeedItems, Mode=OneWay}"
+                 SelectedItem="{Binding SelectedFeedItem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                 SelectionMode="Single">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Cursor="Hand"
@@ -37,11 +39,11 @@
                                 <TextBlock FontSize="16"
                                            Foreground="#FFFFFFFF"
                                            Padding="5,0,0,2"
-                                           Text="{Binding PublishDate, StringFormat={}{0:MMM}, Mode=OneWay, NotifyOnSourceUpdated=True}" />
+                                           Text="{Binding PublishDate, StringFormat={}{0:MMM}, Mode=OneWay}" />
                                 <TextBlock FontSize="16"
                                            Foreground="#FFFFFFFF"
                                            Padding="5,2,0,0"
-                                           Text="{Binding PublishDate, StringFormat={}{0:dd/yyyy}, Mode=OneWay, NotifyOnSourceUpdated=True}" />
+                                           Text="{Binding PublishDate, StringFormat={}{0:dd/yyyy}, Mode=OneWay}" />
                             </StackPanel>
                             <StackPanel Background="#FFEF4527"
                                         Grid.Column="1"
@@ -50,11 +52,11 @@
                                 <TextBlock FontSize="16"
                                            FontWeight="Bold"
                                            Padding="5,2,0,0"
-                                           Text="{Binding Title, Mode=OneWay, NotifyOnSourceUpdated=True}"
+                                           Text="{Binding Title, Mode=OneWay}"
                                            TextWrapping="Wrap" />
                                 <TextBlock FontSize="10"
                                            Padding="5,2,5,2"
-                                           Text="{Binding Summary, Mode=OneWay, NotifyOnSourceUpdated=True}"
+                                           Text="{Binding Summary, Mode=OneWay}"
                                            TextWrapping="Wrap" />
                             </StackPanel>
                         </Grid>
