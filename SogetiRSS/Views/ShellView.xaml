@@ -9,33 +9,60 @@
         mc:Ignorable="d"
         Background="#FFFFFFFF"
         Foreground="#FF000000"
-        Height="700"
-        Title="Sogeti RSS (based on Sogeti Whisper)"
-        Width="1000">
+        Height="745"
+        Title="Sogeti RSS by Osc@rNET (based on Sogeti Whisper # Windows Store)"
+        Width="1000"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="220" />
-            <ColumnDefinition Width="380" />
+            <ColumnDefinition MaxWidth="210"
+                              Width="210" />
+            <ColumnDefinition MaxWidth="5"
+                              Width="5" />
+            <ColumnDefinition MaxWidth="380"
+                              Width="380" />
+            <ColumnDefinition MaxWidth="5"
+                              Width="5" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0"
+                    Grid.Row="0"
+                    Orientation="Vertical">
+            <Image MinWidth="200"
+                   Source="SogetiLogo.png"
+                   Width="200" />
+        </StackPanel>
 
         <ItemsControl x:Name="RSSChannelsRegion"
                       prism:RegionManager.RegionName="{x:Static common:RegionNames.RSSChannels}"
                       Grid.Column="0"
-                      Grid.Row="0" />
+                      Grid.Row="1" />
+
+        <GridSplitter Grid.Column="1"
+                      Grid.RowSpan="2"
+                      HorizontalAlignment="Stretch"
+                      Width="5" />
 
         <ContentControl x:Name="RSSFeeds"
                         prism:RegionManager.RegionName="{x:Static common:RegionNames.RSSFeeds}"
-                        Grid.Column="1"
-                        Grid.Row="0" />
+                        Grid.Column="2"
+                        Grid.RowSpan="2" />
+
+        <GridSplitter Grid.Column="3"
+                      Grid.RowSpan="2"
+                      HorizontalAlignment="Stretch"
+                      Width="5" />
 
         <ContentControl x:Name="RSSFeedReader"
                         prism:RegionManager.RegionName="{x:Static common:RegionNames.RSSFeedReader}"
-                        Grid.Column="2"
-                        Grid.Row="0" />
+                        Grid.Column="4"
+                        Grid.RowSpan="2" />
     </Grid>
 </Window>

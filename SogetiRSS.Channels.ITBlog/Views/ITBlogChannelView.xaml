@@ -8,9 +8,8 @@
              mc:Ignorable="d"
              d:DesignHeight="100"
              d:DesignWidth="200"
-             FontFamily="Trebuchet MS"
-             Margin="0,5,0,5">
-    <Grid HorizontalAlignment="Center">
+             FontFamily="Trebuchet MS">
+    <Grid Margin="5,5,5,5">
         <ToggleButton BorderBrush="#FFFFFFFF"
                       BorderThickness="4"
                       Cursor="Hand"

@@ -24,6 +24,11 @@ namespace SogetiRSS.ViewModels
         /// </summary>
         private string navigationSource;
 
+        /// <summary>
+        /// Defines the title.
+        /// </summary>
+        private string title;
+
         #endregion Fields
 
         #region Constructors
@@ -55,6 +60,25 @@ namespace SogetiRSS.ViewModels
             private set
             {
                 this.SetProperty(ref this.navigationSource, value);
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the title.
+        /// </summary>
+        /// <value>
+        /// The title.
+        /// </value>
+        public string Title
+        {
+            get
+            {
+                return this.title;
+            }
+
+            set
+            {
+                this.SetProperty(ref this.title, value);
             }
         }
 
@@ -98,10 +122,12 @@ namespace SogetiRSS.ViewModels
                 (navigationSelectedFeedItem.Link == null))
             {
                 this.LoadHtml(null);
+                this.Title = string.Empty;
             }
             else
             {
                 this.LoadHtml(navigationSelectedFeedItem.Link.ToString());
+                this.Title = navigationSelectedFeedItem.Title;
             }
         }
 

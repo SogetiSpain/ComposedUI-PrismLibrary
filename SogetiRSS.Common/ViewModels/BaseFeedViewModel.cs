@@ -26,6 +26,11 @@ namespace SogetiRSS.ViewModels
         private ObservableCollection<FeedItemViewModel> feedItems;
 
         /// <summary>
+        /// Defiens the feeds title.
+        /// </summary>
+        private string feedsTitle;
+
+        /// <summary>
         /// Defines the selected feed item.
         /// </summary>
         private FeedItemViewModel selectedFeedItem;
@@ -61,6 +66,25 @@ namespace SogetiRSS.ViewModels
             set
             {
                 this.SetProperty(ref this.feedItems, value);
+            }
+        }
+
+        /// <summary>
+        /// Gets the feeds title.
+        /// </summary>
+        /// <value>
+        /// The feeds title.
+        /// </value>
+        public string FeedsTitle
+        {
+            get
+            {
+                return this.feedsTitle;
+            }
+
+            private set
+            {
+                this.SetProperty(ref this.feedsTitle, value);
             }
         }
 
@@ -163,6 +187,7 @@ namespace SogetiRSS.ViewModels
                                 Title = item.Title.Text
                             };
                         }));
+                this.FeedsTitle = this.Feed.Title.Text;
             }
         }
 

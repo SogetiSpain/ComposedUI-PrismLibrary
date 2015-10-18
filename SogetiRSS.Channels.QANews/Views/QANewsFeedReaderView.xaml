@@ -8,7 +8,28 @@
              xmlns:helpers="clr-namespace:SogetiRSS.Helpers;assembly=SogetiRSS.Common"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <WebBrowser helpers:WebBrowserHelper.NavigationSource="{Binding NavigationSource, Mode=OneWay}" />
+    <Grid Margin="5,0,5,5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Background="#FF0098CC"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Margin="0,0,0,5"
+                    Orientation="Vertical">
+            <TextBlock FontSize="20"
+                       FontWeight="Bold"
+                       Foreground="#FFFFFFFF"
+                       Margin="5,5,5,5"
+                       Text="{Binding Title, Mode=OneWay}"
+                       TextWrapping="Wrap" />
+        </StackPanel>
+        <WebBrowser helpers:WebBrowserHelper.NavigationSource="{Binding NavigationSource, Mode=OneWay}"
+                    Grid.Column="0"
+                    Grid.Row="1" />
     </Grid>
 </UserControl>
