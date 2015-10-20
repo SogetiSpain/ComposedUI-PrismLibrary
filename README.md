@@ -7,4 +7,4 @@ Existen muchos retos significativos de ingeniería vinculados al rendimiento, es
 
 Prism es un marco de trabajo que permite crear aplicaciones XAML en Windows Presentation Foundation, Windows 10 (Universal Windows Platform) y Xamarin Forms, que son débilmente acopladas, con código mantenible y testeable.  La versión actual, Prism 6, es totalmente de código abierto y se puede encontrar en GitHub (http://bit.ly/1Lwfyk8).  El origen de la librería Prism está en Microsoft Patterns & Practices y los miembros del equipo central que desarrollaron las versiones anteriores, desde Prism 1 hasta Prism 5, han realizado el esfuerzo de entregar a la comunidad de código abierto la última versión, Prism 6 (ahora el proyecto forma parte de .NET Foundation, http://bit.ly/11k2xKO).
 
-[Seguir leyendo](http://bit.ly/1KBqZuB)
+[Seguir leyendo](http://bit.ly/1XgM7tQ)
